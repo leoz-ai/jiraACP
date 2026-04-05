@@ -13,7 +13,7 @@
 ## Installation
 
 ```bash
-npm install -g jira-acp
+npm install -g @jiraacp/cli
 ```
 
 **Requirements:** Node.js >= 20, [Claude Code](https://claude.ai/code) installed globally.

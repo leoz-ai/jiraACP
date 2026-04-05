@@ -1,5 +1,5 @@
 {
-  "name": "jira-acp",
+  "name": "@jiraacp/cli",
   "version": "2026.405.2",
   "description": "AI-powered Jira pipeline CLI: Ticket → Code → GitHub → Deploy → Notify",
   "type": "module",
