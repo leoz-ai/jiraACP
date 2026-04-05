@@ -1,6 +1,6 @@
 {
   "name": "jira-acp",
-  "version": "0.1.0",
+  "version": "2026.406.2",
   "description": "AI-powered Jira pipeline CLI: Ticket → Code → GitHub → Deploy → Notify",
   "type": "module",
   "bin": {
@@ -14,12 +14,17 @@
   "engines": {
     "node": ">=20"
   },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "start": "node dist/cli.js start",
     "stop": "node dist/cli.js stop",
     "restart": "npm run stop && npm run start",
+    "version:date": "node scripts/version-date.mjs",
+    "release": "npm run build && npm run version:date && npm publish",
     "typecheck": "tsc --noEmit",
     "lint": "tsc --noEmit"
   },
